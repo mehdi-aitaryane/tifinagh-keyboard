@@ -1,0 +1,47 @@
+
+html
+{
+    width: 100%;
+    background-color: orange;
+}
+
+#title
+{
+    color: red;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#area
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    font-size: 24px;
+    background-color: gold;
+}
+
+#keyboard
+{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.row
+{
+    display: block;
+    padding: 10px;
+}
+
+.row > button
+{
+    font-size: 18px;
+    padding: 10px;
+    color: red;
+    background-color: gold;
+    margin: 5px;
+    width: 50px;
+}
+
