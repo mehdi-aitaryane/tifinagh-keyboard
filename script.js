@@ -60,12 +60,15 @@ function preventEvent(e)
 {
     
     c = map[e.key]
-    
-    if( e.key == 'a' && e.ctrlKey )
+    if(e.key == "Enter" || e.key == "ArrowRight" || e.key == "ArrowLeft" || e.key == "ArrowUp" || e.key == "ArrowDown" || e.key == "Backspace" || e.key == "space")
     {
 
     }
-    else if(c)
+    else if( (e.key == 'a' || e.key == 'x' || e.key == 'c' || e.key == 'v') && e.ctrlKey )
+    {
+
+    }
+    else if(c || ( e.key >= 'a' && e.key <= 'z') || ( e.key >= 'A' && e.key <= 'Z') )
     {
         e.preventDefault()
     }
