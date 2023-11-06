@@ -32,6 +32,8 @@ html
     width: 80%;
     font-size: 24px;
     background-color: gold;
+    resize: vertical;
+    min-height: 200px;
 }
 
 
