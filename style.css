@@ -8,8 +8,21 @@ html
 #title
 {
     color: red;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#title:hover
+{
+    color: red;
     margin-top: 50px;
     text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
 #area

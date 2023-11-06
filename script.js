@@ -74,3 +74,8 @@ function preventEvent(e)
     }
 
 }
+
+function refresh()
+{
+    window.location.reload();
+}
