@@ -1,4 +1,39 @@
-
+let map = {
+    "a" : "ⴰ",
+    "b" : "ⴱ",
+    "g" : "ⴳ",
+    "d" : "ⴷ",
+    "D" : "ⴹ",
+    "e" : "ⴻ",
+    "f" : "ⴼ",
+    "k" : "ⴽ",
+    "h" : "ⵀ",
+    "H" : "ⵃ",
+    "A" : "ⵄ",
+    "K" : "ⵅ",
+    "q" : "ⵇ",
+    "i" : "ⵉ",
+    "j" : "ⵊ",
+    "l" : "ⵍ",
+    "m" : "ⵎ",
+    "n" : "ⵏ",
+    "o" : "ⵓ",
+    "r" : "ⵔ",
+    "R" : "ⵕ",
+    "G" : "ⵖ",
+    "s" : "ⵙ",
+    "S" : "ⵚ",
+    "c" : "ⵛ",
+    "t" : "ⵜ",
+    "T" : "ⵟ",
+    "w" : "ⵡ",
+    "y" : "ⵢ",
+    "z" : "ⵣ",
+    "Z" : "ⵥ",
+    "u" : "ⵯ",
+    "p" : "ⵒ",
+    "v" : "ⵠ"
+}
 
 function writeChar(c)
 {
@@ -10,4 +45,29 @@ function writeChar(c)
     txtarea.value = finText;
     txtarea.focus()
     txtarea.selectionEnd= end + 1;
+}
+
+function readChar(e)
+{
+    c = map[e.key]
+    if( c && !e.ctrlKey )
+    {
+        writeChar(c)
+    }
+}
+
+function preventEvent(e)
+{
+    
+    c = map[e.key]
+    
+    if( e.key == 'a' && e.ctrlKey )
+    {
+
+    }
+    else if(c)
+    {
+        e.preventDefault()
+    }
+
 }

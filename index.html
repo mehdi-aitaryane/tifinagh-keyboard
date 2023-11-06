@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Tifinagh Virtual Keyboard</title>
 </head>
-<body>
+<body onkeydown="readChar(event)">
     <h1 id="title">Tifinagh Virtual Keyboard</h1>
-    <textarea id="area" rows="7"></textarea>
+    <textarea id="area" rows="7" onkeydown="preventEvent(event)" onkeypress="preventEvent(event)" onkeyup="preventEvent(event)"></textarea>
     <div id="keyboard">
         <div class="row">
             <div class="column">
@@ -84,7 +84,7 @@
                 <button onclick="writeChar('ⵏ')">ⵏ</button>
             </div>
             <div class="column">
-                <span>u</span>
+                <span>o</span>
                 <button onclick="writeChar('ⵓ')">ⵓ</button>
             </div>
             <div class="column">
@@ -120,7 +120,7 @@
                 <button onclick="writeChar('ⵟ')">ⵟ</button>
             </div>
             <div class="column">
-                <span>U</span>
+                <span>w</span>
                 <button onclick="writeChar('ⵡ')">ⵡ</button>
             </div>
             <div class="column">
